@@ -2,7 +2,7 @@ package Locale::Maketext::Extract::Plugin::Xslate;
 use strict;
 use warnings;
 use parent qw(Locale::Maketext::Extract::Plugin::Base);
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 our $DEBUG = 0;
 
 use Locale::Maketext::Extract;
@@ -122,6 +122,30 @@ Locale::Maketext::Extract::Plugin::Xslate - Xslate format parser
 Extracts strings to localise from L<Text::Xslate> templates.
 
 B<THIS IS A DEVELOPMENT RELEASE. API MAY CHANGE WITHOUT NOTICE>.
+
+=head1 VALID FORMATS
+
+Valid formats are:
+
+=over 4
+
+=item [% l('string') %]
+
+=item [% l('string %1', args[, ...]) %]
+
+=item [% IF l('string') = 'FOO' %]
+
+=back
+
+=head1 KNOWN FILE types
+
+=over 4
+
+=item .tt
+
+=item .html
+
+=back
 
 =head1 AUTHOR
 

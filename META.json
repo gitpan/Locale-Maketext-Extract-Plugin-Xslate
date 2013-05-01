@@ -4,7 +4,7 @@
       "Kazuhiro Osawa E<lt>yappo {@} shibuya {dot} plE<gt>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -42,7 +42,7 @@
    "provides" : {
       "Locale::Maketext::Extract::Plugin::Xslate" : {
          "file" : "lib/Locale/Maketext/Extract/Plugin/Xslate.pm",
-         "version" : "v0.0.1"
+         "version" : "v0.0.2"
       }
    },
    "release_status" : "stable",
@@ -51,5 +51,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.1"
+   "version" : "v0.0.2"
 }
