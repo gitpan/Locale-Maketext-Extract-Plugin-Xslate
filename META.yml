@@ -3,6 +3,7 @@ abstract: 'Xslate format parser'
 author:
   - 'Kazuhiro Osawa E<lt>yappo {@} shibuya {dot} plE<gt>'
 build_requires:
+  File::Temp: 0
   Test::More: 0.98
   Test::Requires: 0
 configure_requires:
@@ -20,7 +21,7 @@ no_index:
 provides:
   Locale::Maketext::Extract::Plugin::Xslate:
     file: lib/Locale/Maketext/Extract/Plugin/Xslate.pm
-    version: v0.0.2
+    version: v0.0.3
 requires:
   Locale::Maketext::Extract: 0
   Text::Xslate: 0
@@ -28,4 +29,4 @@ requires:
   perl: 5.008005
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.0.2
+version: v0.0.3

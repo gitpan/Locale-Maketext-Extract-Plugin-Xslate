@@ -21,6 +21,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "File::Temp" : "0",
             "Test::More" : "0.98",
             "Test::Requires" : "0"
          }
@@ -42,7 +43,7 @@
    "provides" : {
       "Locale::Maketext::Extract::Plugin::Xslate" : {
          "file" : "lib/Locale/Maketext/Extract/Plugin/Xslate.pm",
-         "version" : "v0.0.2"
+         "version" : "v0.0.3"
       }
    },
    "release_status" : "stable",
@@ -51,5 +52,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.2"
+   "version" : "v0.0.3"
 }

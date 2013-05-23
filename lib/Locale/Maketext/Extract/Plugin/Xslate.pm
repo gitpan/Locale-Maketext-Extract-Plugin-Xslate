@@ -2,7 +2,7 @@ package Locale::Maketext::Extract::Plugin::Xslate;
 use strict;
 use warnings;
 use parent qw(Locale::Maketext::Extract::Plugin::Base);
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 our $DEBUG = 0;
 
 use Locale::Maketext::Extract;
@@ -47,7 +47,7 @@ sub walker {
                     if ($second && ref($second) eq 'ARRAY' && $second->[0] && ref($second->[0]) eq 'Text::Xslate::Symbol') {
                         my $value = $second->[0];
                         if ($value->arity eq 'literal') {
-                            $self->add_entry($value->value);
+                            $self->add_entry($value->value, $value->line);
                         }
                     }
                 }
